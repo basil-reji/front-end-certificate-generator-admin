@@ -1,0 +1,49 @@
+<section>
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Messages</h5>
+            <div class="container">
+                {{!-- {{#if dataStatus}} --}}
+                <table id="data_table" class="display table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">Date</th>
+                            <th scope="col" style="width: 15%;">Name</th>
+                            <th scope="col" style="width: 15%;">Email</th>
+                            <th scope="col" style="width: 15%;">Subject</th>
+                            <th scope="col" style="width: 40%;">Message</th>
+                            <th scope="col">Option</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{!-- {{#each contacts}}
+                        <tr id="row-{{this._id}}">
+                            <td>{{this.date}}</td>
+                            <td>{{this.name}}</td>
+                            <td>{{this.email}}</td>
+                            <td>{{this.subject}}</td>
+                            <td>{{this.message}}</td>
+                            <td><button class="rm-x" onclick="removeContact(`{{this._id}}`)"><i
+                                        class="fa-solid fa-x"></i></button>
+                            </td>
+                        </tr>
+                        {{/each}} --}}
+                        <tr id="row">
+                            <td>Date</td>
+                            <td>Name</td>
+                            <td>Email</td>
+                            <td>Subject</td>
+                            <td>Message</td>
+                            <td><button class="rm-x"><i class="ri-chat-delete-line fa-x"></i></button>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+                {{!-- {{else}}
+                <h4 class="m-5">The contacts is empty</h4>
+                {{/if}} --}}
+            </div>
+        </div>
+    </div>
+</section>

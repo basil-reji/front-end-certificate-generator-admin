@@ -1,0 +1,36 @@
+<aside id="sidebar" class="close">
+    <div id="shead">
+        <div id="slogo">
+            <i class="bi bi-circle"></i>
+        </div>
+        <!-- <h4>Admin</h4> -->
+    </div>
+    <div id="scont">
+        <ul>
+            <li>
+                <a href="/admin" {{#if isDashboardPage}}class="active"{{/if}}>
+                    <i class="bi bi-grid sico"></i>
+                    <h5>Dashboard</h5>
+                </a>
+            </li>
+            <li>
+                <a href="/events" {{#if isEventsPage}}class="active"{{/if}}>
+                    <i class="bi bi-menu-button-wide sico"></i>
+                    <h5>Dashboard</h5>
+                </a>
+            </li>
+            <li>
+                <a href="/admin/messages" {{#if isMessagesPage}}class="active"{{/if}}>
+                    <i class="ri-message-3-line sico"></i>
+                    <h5>Messages</h5>
+                </a>
+            </li>
+            <li>
+                <a href="/admin/profile" {{#if isAdminsPage}}class="active"{{/if}}>
+                    <i class="bi bi-person sico"></i>
+                    <h5>Profile</h5>
+                </a>
+            </li>
+        </ul>
+    </div>
+</aside>
